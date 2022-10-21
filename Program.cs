@@ -1,4 +1,5 @@
 ﻿using System;
+using Objetos.ContentContext;
 
 namespace Objetos
 {
@@ -6,7 +7,7 @@ namespace Objetos
     {
         static void Main(string[] args)
         {
-
+            var course = new Course();
         }
     }
 }
