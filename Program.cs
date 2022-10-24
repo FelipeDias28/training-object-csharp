@@ -33,7 +33,7 @@ namespace Objetos
             var careers = new List<Career>();
             var careerDotNet = new Career("Especialista .NET", "especialista-dotnet");
 
-            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", courseOOP);
+            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", null);
             var careerItem = new CareerItem(1, "Comece por aqui", "", courseCsahp);
             var careerItem3 = new CareerItem(3, "Aprenda .NET", "", courseDotNet);
 
@@ -50,8 +50,11 @@ namespace Objetos
                 foreach (var item in career.Items.OrderBy(x => x.Ordem)) // Percorrer os itens da carreira
                 {
                     Console.WriteLine($"{item.Ordem} - {item.Title}");
-                    Console.WriteLine(item.Course.Title);
-                    Console.WriteLine(item.Course.Level);
+                    Console.WriteLine(item.Course?.Title); // interrogação checa se o objeto é nulo
+                    Console.WriteLine(item.Course?.Level);
+
+                    foreach (var notification in item.Notifications)
+                        Console.WriteLine($"{notification.Property} - {notification.Message}");
                 }
             }
         }
