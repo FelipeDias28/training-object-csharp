@@ -1,3 +1,5 @@
+using Objetos.SharedContext;
+
 namespace Objetos.ContentContext
 {
     public class Module : Base

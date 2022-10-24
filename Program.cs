@@ -1,5 +1,6 @@
 ﻿using System;
 using Objetos.ContentContext;
+using Objetos.SubscriptionContext;
 
 namespace Objetos
 {
@@ -56,6 +57,10 @@ namespace Objetos
                     foreach (var notification in item.Notifications)
                         Console.WriteLine($"{notification.Property} - {notification.Message}");
                 }
+
+                var payPalSubscription = new PayPalSubscription();
+                var student = new Student();
+                student.CreateSubscription(payPalSubscription);
             }
         }
     }

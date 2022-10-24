@@ -1,4 +1,5 @@
 using Objetos.ContentContext.Enums;
+using Objetos.SharedContext;
 
 namespace Objetos.ContentContext
 {

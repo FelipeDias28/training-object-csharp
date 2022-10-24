@@ -1,7 +1,8 @@
 using Objetos.NotificationContext;
 
-namespace Objetos.ContentContext
+namespace Objetos.SharedContext
 {
+    // como essa classe serve de base para vários contextos ela fica em um diretório separado
     public class Base : Notifiable
     {
         public Base()

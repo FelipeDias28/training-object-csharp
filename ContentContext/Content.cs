@@ -1,3 +1,5 @@
+using Objetos.SharedContext;
+
 namespace Objetos.ContentContext
 {
     // Nesta classe vai tudo que é comum dentro de ContentContext (clase base)

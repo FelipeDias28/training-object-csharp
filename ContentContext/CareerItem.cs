@@ -1,4 +1,5 @@
 using Objetos.NotificationContext;
+using Objetos.SharedContext;
 
 namespace Objetos.ContentContext
 {
